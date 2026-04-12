@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flash Study Deck</title>
+    <meta name="author" content="Lesley Fukushima" />
+    <meta
+      name="description"
+      content="Flash Study Deck is designed to help users study technical concepts effectively using digital flashcards."
+    />
+    <meta
+      name="keywords"
+      content="flashcard, flashcards, study, aid, aids, deck, flash"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="assets/vendor/normalize.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <h1 class="header__title">
+        <a href="#home" class="header__link">Flash Cards</a>
+      </h1>
+      <nav class="nav">
+        <ul class="nav__links">
+          <li><a href="#home" class="nav__link">My Decks</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="home" class="page__main-content">
+      <section id="decks" class="decks">
+        <h2 class="decks__title">My Decks</h2>
+        <div class="wrapping-row">
+          <ul class="decks__list wrapping-row__display-contents">
+            <template id="deck-template">
+              <li class="deck deck_color_green">
+                <a class="deck__link" href="#"></a>
+                <h3 class="deck__title"></h3>
+                <div class="deck__row">
+                  <span class="deck__count"></span>
+                  <button
+                    type="button"
+                    aria-label="Delete deck"
+                    class="deck__delete-btn"
+                  ></button>
+                </div>
+              </li>
+            </template>
+          </ul>
+          <button type="button" class="decks__new-deck-btn">+ New Deck</button>
+        </div>
+      </section>
+    </main>
+    <section id="not-found" class="not-found">
+      <h2 class="not-found__status-code">404</h2>
+      <p class="not-found__text">404 Not Found</p>
+    </section>
+    <section id="carousel" class="carousel">
+      <h2 class="carousel__title">HTML Tags Deck &middot; 1/10</h2>
+      <div class="carousel__horizontal">
+        <button
+          type="button"
+          class="carousel__btn carousel__btn_type_left carousel__btn_disabled"
+          aria-label="Go to previous card"
+          disabled
+        ></button>
+        <div class="carousel__card">
+          <p class="carousel__card-text">&lt;body&gt;&lt;/body&gt;</p>
+        </div>
+        <button
+          type="button"
+          class="carousel__btn carousel__btn_type_right"
+          aria-label="Next card"
+        ></button>
+      </div>
+      <div class="carousel__flip-container">
+        <button
+          type="button"
+          class="carousel__btn carousel__btn_type_flip"
+          aria-label="Flip card over"
+        ></button>
+      </div>
+    </section>
+    <footer class="footer">
+      <p class="footer__text">&copy;2026 Lesley Fukushima</p>
+    </footer>
+    <script type="module" src="assets/js/index.js"></script>
+  </body>
+</html>
